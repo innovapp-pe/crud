@@ -2,7 +2,7 @@
     session_start();
     include('../../connection/config.php');
 
-    $sqlRequest = "SELECT * from crm_estados_referencia WHERE estado=1 order by id ASC"; 
+    $sqlRequest = "SELECT * FROM alumno WHERE estado = 1  ORDER BY nombre"; 
     $result = mysqli_query($link, $sqlRequest); //save result
     $registros = $result->num_rows;
 

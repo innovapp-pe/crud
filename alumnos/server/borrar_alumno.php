@@ -2,10 +2,10 @@
 	session_start();
 	include('../../connection/config.php');
 	// initialize variables
-	$id_cargo =  $_POST['id_cargo'];
+	$id_alumno =  $_POST['id_alumno'];
 
 		//$sql= "DELETE FROM crm_contactos_cargos WHERE id = $id_cargo";
-		$sql= "UPDATE crm_contactos_cargos SET estado= 0 WHERE id = $id_cargo";
+		$sql= "UPDATE alumno SET estado= 0 WHERE id = $id_alumno";
 		mysqli_query($link, $sql);
 		
 		/*mysqli_query($link, "DELETE FROM crm_contactos WHERE id = $id_contacto");*/
